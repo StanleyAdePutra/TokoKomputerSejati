@@ -1,0 +1,172 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: #1e3d59;
+  text-align: center;
+  padding: 30px;
+  color: #ff6e40;
+}
+
+body {
+  background-color: #f5f0e1;
+  text-align: center;
+  margin: 0%;
+}
+
+.container,
+.container1 {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.container1 {
+  width: 60%;
+}
+
+.button,
+.button1,
+.openmodal {
+  background-color: #ff6e40;
+  border-radius: 15px;
+  padding: 10px;
+  color: #1e3d59;
+  cursor: pointer;
+}
+
+.button1 {
+  padding: 0%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.rowhead {
+  display: flex;
+  background-color: #1e3d59;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.toppart {
+  display: flex;
+}
+
+.rowbody {
+  padding-bottom: 10px;
+}
+
+.rowbody:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.container .rowbody:nth-of-type(odd),
+.container1 .rowbody:nth-of-type(odd) {
+  background-color: #ffbf40;
+}
+
+p {
+  width: 100%;
+}
+
+.lowpart .button {
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-right {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.btn-left {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.form {
+  background-color: #ffbf40;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px 0;
+}
+
+td {
+  text-align: left;
+  width: 25%;
+  padding-bottom: 5px;
+}
+
+td:last-child {
+  text-align: left;
+  width: 75%;
+}
+
+h2 {
+  color: #1e3d59;
+  gap: 0%;
+  padding: 0%;
+}
+
+.button:hover {
+  background-color: #f94812;
+}
+
+.input,
+.input1,
+.input2 {
+  width: 72%;
+  height: 20px;
+}
+
+.input1 {
+  width: 23%;
+}
+
+.input2 {
+  width: 4%;
+  text-align: center;
+}
+
+.total {
+  display: flex;
+  background-color: #1e3d59;
+  border-radius: 0 0 15px 15px;
+  color: #f5f0e1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10% 0 10% 0;
+}
